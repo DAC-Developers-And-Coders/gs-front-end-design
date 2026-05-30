@@ -41,11 +41,12 @@ a {
     text-decoration: none;
     font-weight: 400;
     color: var(--color-white);
+    font-size: 1.5vmin;
 }
 
 p {
     color: var(--color-white);
-    font-size: 2vmin;
+    font-size: 2.5vmin;
     text-align: justify;
 }
 
@@ -99,6 +100,53 @@ h1, h2 {
         .nav-header-menu {
             display: flex;
             gap: var(--spacing-lg);
+        }
+    }
+}
+
+#problem {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-lg);
+    padding: var(--spacing-lg);
+
+    .explain-problem {
+        width: 55%;
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-lg);
+
+        h2 {
+            font-size: 4vmin;
+        }
+    }
+
+    .news-problem {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .image-news {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            padding: var(--spacing-md);
+
+            h2 {
+                font-size: 3.5vmin;
+                padding-bottom: var(--spacing-sm);
+            }
+
+            img {
+                border: 6px solid var(--color-purple);
+                border-radius: 8px;
+                transition: .5s;
+
+                &:hover {
+                    scale: 1.1;
+                }
+            }
         }
     }
 }
