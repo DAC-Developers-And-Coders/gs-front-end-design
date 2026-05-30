@@ -18,14 +18,14 @@
     --spacing-sm:10px;
     --spacing-md:20px;
     --spacing-lg:30px;
-    --color-space-blue: #070B14;
-    --color-space-purple: #2A1F45;
+    --color-purple: #8B5CF6;
+    --color-space-purple: #0b0813;
     --color-white: #E2E8F0;
     --color-gray:#94A3B8;
 }
 
 body {
-    background-color: var(--color-space-blue);
+    background-color: var(--color-space-purple);
 }
 
 html {
@@ -49,72 +49,60 @@ p {
     text-align: justify;
 }
 
-#main-header {
-    height: auto;
-    padding-block: var(--spacing-md);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding-inline: var(--spacing-lg);
-    background-color: var(--color-space-purple);
-
-    h1 {
-        color: var(--color-gray);
-        font-weight: bold;
-        font-size: 7vmin;
-        font-family: 'Orbitron-Bold';
-    }
-
-    .nav-header-menu {
-        display: flex;
-        gap: var(--spacing-md);
-    }
+h1, h2 {
+    color: var(--color-gray);
+    font-family: Orbitron-Bold;
 }
 
 #hero {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: var(--spacing-lg);
-    gap: var(--spacing-md);
-    margin-inline: var(--spacing-lg);
+    height: 100dvh;
+    background-image: linear-gradient(to top, rgba(0,0,0,.8),rgba(0,0,0,.4)),
+    url(../image/background_home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 
-    h2 {
-        color: var(--color-gray);
-        font-size: 4vmin;
-        font-family: 'Orbitron-Bold';
+    .hero-home {
         text-align: center;
-        padding-bottom: var(--spacing-md);
+
+        .title-hero {
+            padding-top: var(--spacing-lg);
+            font-size: 5vmin;
+        }
+
+        h1 {
+            font-size: 7vmin;
+            
+            .noise-color {
+                color: var(--color-purple);
+            }
+        }
+
+        .sub-title-hero {
+            padding-top: var(--spacing-md);
+            font-size: 2vmin;
+        }        
     }
 
-    .project-image {
-        width: 55%;
+    .hero-header {
+        height: 100px;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
-        gap: var(--spacing-sm);
+        justify-content: space-between;
+        padding-inline: var(--spacing-lg);
 
-        img {
-            width: 100%;
+        h1 {
+            font-size: 4vmin;
+        }
+
+        .nav-header-menu {
+            display: flex;
+            gap: var(--spacing-lg);
         }
     }
-        .project-problem {
-            width: 45%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: var(--spacing-sm);
-        }
-
 }
 
-#footer-team {
-    height: 100px;
-    font-size: 1.5vmin;
-    text-align: center;
-    padding: var(--spacing-lg);
-    background-color: var(--color-space-purple);
-    color: var(--color-white);
+section {
+    min-height: 100dvh;
 }
