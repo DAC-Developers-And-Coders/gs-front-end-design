@@ -100,6 +100,15 @@ h1, h2 {
         .nav-header-menu {
             display: flex;
             gap: var(--spacing-lg);
+
+            a {
+                transition: .5s;
+
+                &:hover {
+                    color: var(--color-gray);
+                }
+            }
+            
         }
     }
 }
@@ -146,6 +155,43 @@ h1, h2 {
                 &:hover {
                     scale: 1.1;
                 }
+            }
+        }
+    }
+}
+
+#objective {
+    
+    h2 {
+        font-size: 4vmin;
+        text-align: center;
+        padding: var(--spacing-lg);
+    }
+
+    .card-objective {
+        display:flex;
+        gap: var(--spacing-lg);
+        margin-inline: var(--spacing-lg);
+
+        .card-objective-item {
+            width: 33%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: var(--spacing-md);
+            padding: var(--spacing-md);
+            border: 2px solid var(--color-purple);
+            border-radius: 8px;
+            transition: .5s;
+
+            &:hover {
+                scale: 1.05;
+                background-color: rgba(139, 92, 246, .1);
+            }
+
+            p {
+                text-align: center;
             }
         }
     }
