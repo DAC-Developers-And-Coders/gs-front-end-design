@@ -18,6 +18,7 @@
     --spacing-sm:10px;
     --spacing-md:20px;
     --spacing-lg:30px;
+    --spacing-xl:50px;
     --color-purple: #8B5CF6;
     --color-black: #000000cc;
     --color-space-purple: #0b0813;
@@ -162,6 +163,61 @@ h1, h2 {
     }
 }
 
+#technology {
+    height: 100dvh;
+    background-image: linear-gradient(to top, var(--color-black), var(--color-black)),
+    url(../image/background_technology.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+
+    h2 {
+        font-size: 4vmin;
+        text-align: center;
+        padding: var(--spacing-lg);
+    }
+
+    .explain-technology {
+        display:flex;
+        flex-direction: row;
+        gap: var(--spacing-xl);
+        justify-content: center;
+        margin: var(--spacing-lg);
+        width: 60%;
+
+
+        .explain-technology-item {
+            h2 {
+                font-size: 2.5vmin;
+            }
+
+            p{
+                font-size: 2vmin;
+            }
+        }
+    }
+
+    .image-tecnology {
+        width: 40%;
+
+        img {
+            text-align: center;
+            width: 100%;
+            border: 2px solid var(--color-purple);
+            border-radius: 8px;
+            transition: .5s;
+            
+            &:hover {
+                scale: 1.05;
+            }
+        }
+    }
+}
+
 #objective {   
     margin: var(--spacing-lg);
     
@@ -196,11 +252,12 @@ h1, h2 {
                 }
 
             img {
-                width: 100%;
+                width: 70%;
                 border-radius: 8px;
             }
 
             p {
+                font-size: 2vmin;
                 width: 100%;
                 text-align: center;
             }
@@ -226,7 +283,7 @@ h1, h2 {
         display:flex;
         flex-direction: row;
         flex-wrap: wrap;
-        gap: var(--spacing-lg);
+        gap: var(--spacing-xl);
         justify-content: center;
         margin: var(--spacing-lg);
 
@@ -319,7 +376,7 @@ h1, h2 {
         display:flex;
         flex-direction: row;
         flex-wrap: wrap;
-        gap: var(--spacing-lg);
+        gap: var(--spacing-xl);
         justify-content: center;
         margin: var(--spacing-lg);
 
